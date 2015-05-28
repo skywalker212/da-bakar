@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20150527072609) do
     t.string   "answer"
     t.integer  "user_id"
     t.integer  "post_id"
-    t.integer  "comment_upvote",   default: 0
-    t.integer  "comment_downvote", default: 0
-    t.integer  "parent_coment_id"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.integer  "comment_upvote",    default: 0
+    t.integer  "comment_downvote",  default: 0
+    t.integer  "parent_comment_id"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
   create_table "posts", force: :cascade do |t|

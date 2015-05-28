@@ -8,7 +8,7 @@ class CreateComments < ActiveRecord::Migration
       t.integer :post_id
       t.integer :comment_upvote, default: 0
       t.integer :comment_downvote, default: 0
-      t.integer :parent_coment_id
+      t.integer :parent_comment_id
 
       t.timestamps null: false
     end
